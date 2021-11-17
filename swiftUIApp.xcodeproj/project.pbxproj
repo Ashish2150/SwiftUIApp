@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7543F7DE2744BDC60038034A /* HikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543F7DD2744BDC60038034A /* HikeModel.swift */; };
+		7543F7E42744CF480038034A /* HikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543F7E32744CF480038034A /* HikeCell.swift */; };
 		75A514692743A67000508688 /* swiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A514682743A67000508688 /* swiftUIAppApp.swift */; };
 		75A5146B2743A67000508688 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5146A2743A67000508688 /* ContentView.swift */; };
 		75A5146D2743A67300508688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A5146C2743A67300508688 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7543F7DD2744BDC60038034A /* HikeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeModel.swift; sourceTree = "<group>"; };
+		7543F7E32744CF480038034A /* HikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeCell.swift; sourceTree = "<group>"; };
 		75A514652743A67000508688 /* swiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A514682743A67000508688 /* swiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIAppApp.swift; sourceTree = "<group>"; };
 		75A5146A2743A67000508688 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7543F7DC2744BC930038034A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7543F7DD2744BDC60038034A /* HikeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7543F7E22744CF2F0038034A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7543F7E32744CF480038034A /* HikeCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		75A5145C2743A67000508688 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +72,8 @@
 		75A514672743A67000508688 /* swiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
+				7543F7E22744CF2F0038034A /* Cell */,
+				7543F7DC2744BC930038034A /* Model */,
 				75A514682743A67000508688 /* swiftUIAppApp.swift */,
 				75A5146A2743A67000508688 /* ContentView.swift */,
 				75A5146C2743A67300508688 /* Assets.xcassets */,
@@ -140,6 +162,8 @@
 			files = (
 				75A5146B2743A67000508688 /* ContentView.swift in Sources */,
 				75A514692743A67000508688 /* swiftUIAppApp.swift in Sources */,
+				7543F7E42744CF480038034A /* HikeCell.swift in Sources */,
+				7543F7DE2744BDC60038034A /* HikeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

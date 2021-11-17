@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct swiftUIAppApp: App {
+    
+    init() {
+        setupTheme()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+    }
+    
+    private func setupTheme(){
+        UINavigationBar.appearance().backgroundColor = UIColor.green
     }
 }

@@ -2,20 +2,26 @@
 //  ContentView.swift
 //  swiftUIApp
 //
-//  Created by Ashish Kumar Maurya on 16/11/21.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    let hikes = Hike.all()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            ForEach(hikes, id: \.name) { (hike) in
+                HikeCell(hikeData: hike)
+            }
+            Spacer()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().preferredColorScheme(.light)
+        ContentView().preferredColorScheme(.dark)
     }
 }
